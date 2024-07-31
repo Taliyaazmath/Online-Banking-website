@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f8c6c4, #f5a623); /* Vibrant gradient background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    text-align: center; /* Center align h1 and h2 */
+}
+
+h1 {
+    color: #444; /* Dark gray for main heading */
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #555; /* Slightly lighter gray for subheadings */
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Layout */
+.container {
+    max-width: 600px; /* Increased max width for better alignment */
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Centering content */
+}
+
+/* Paragraph Styles */
+p {
+    margin: 10px 0; /* Margin adjustments for better spacing */
+    font-size: 16px; /* Set a font size for paragraphs */
+    text-align: center; /* Center align text inside paragraphs */
+}
+
+/* Form Styles */
+form {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    display: block;
+    width: 100%;
+    text-align: center; /* Center align labels */
+    margin: 5px 0 3px;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+    width: 80%; /* Reduced width */
+    max-width: 350px; /* Maximum width */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Subtle border color */
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+    text-align: center; /* Center align text inside input fields */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #888; /* Focus color */
+    outline: none;
+}
+
+input[type="submit"],
+button {
+    width: 80%; /* Reduced width */
+    max-width: 350px; /* Maximum width */
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #ff6f61; /* Coral for buttons */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+    display: block; /* Center alignment */
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #e55b5b; /* Darker coral on hover */
+}
+
+textarea {
+    resize: vertical;
+    min-height: 60px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    text-align: center; /* Center align text in table cells */
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 8px;
+}
+
+th {
+    background-color: #ff6f61; /* Coral for headers */
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Centered Text Styles */
+.text-center {
+    text-align: center; /* Center align text */
+}
+
+.text-center p,
+.text-center h2,
+.text-center span {
+    margin: 10px 0; /* Margin adjustments for better spacing */
+}
+
+/* Additional Elements */
+.success-message {
+    color: #28a745; /* Green for success messages */
+    font-size: 14px;
+    text-align: center; /* Center align success messages */
+}
+
+.error-message {
+    color: #dc3545; /* Red for error messages */
+    font-size: 14px;
+    text-align: center; /* Center align error messages */
+}
+
+.form-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button-group button {
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        width: 90%;
+    }
+
+    input[type="submit"],
+    button {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    th,
+    td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
